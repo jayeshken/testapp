@@ -1,0 +1,59 @@
+<%= form_for(@tag) do |f| %>
+  <% if @tag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
+
+      <ul>
+      <% @tag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %><br>
+  </div>
+  
+    <%= f.label :DMS %>
+    <%= f.label :IT1 %>
+    <%= f.number_field :IT1 %>
+    <%= f.label :IT2 %>
+    <%= f.number_field :IT2 %><br>
+
+    <%= f.label :DS %>
+    <%= f.label :IT1 %>
+    <%= f.number_field :IT1 %>
+    <%= f.label :IT2 %>
+    <%= f.number_field :IT2 %><br>
+  
+  
+    <%= f.label :CO %>
+    <%= f.label :IT1 %>
+    <%= f.number_field :IT1 %>
+    <%= f.label :IT2 %>
+    <%= f.number_field :IT2 %><br>
+    
+    <%= f.label :EM %>
+    <%= f.label :IT1 %>
+    <%= f.number_field :IT1 %>
+    <%= f.label :IT2 %>
+    <%= f.number_field :IT2 %><br>
+    
+    <%= f.label :SAD %>
+    <%= f.label :IT1 %>
+    <%= f.number_field :IT1 %>
+    <%= f.label :IT2 %>
+    <%= f.number_field :IT2 %><br>
+  
+    <%= f.label :OOPD %>
+    <%= f.label :IT1 %>
+    <%= f.number_field :IT1 %>
+    <%= f.label :IT2 %>
+    <%= f.number_field :IT2 %><br>
+
+  <div class="actions">
+    <%= f.submit 'Submit',class:'btn btn-primary'%>
+  </div>
+<% end %>

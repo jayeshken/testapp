@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Faculty:</strong>
+  <%= @review.faculty %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @review.subject %>
+</p>
+
+<p>
+  <strong>It1:</strong>
+  <%= @review.IT1 %>
+</p>
+
+<p>
+  <strong>It2:</strong>
+  <%= @review.IT2 %>
+</p>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

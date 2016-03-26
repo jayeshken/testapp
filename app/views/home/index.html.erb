@@ -1,0 +1,66 @@
+
+
+<div class="header">
+		<div class="header_inner">
+			<a class="navbar-brand" href="#">
+				<img alt="Brand" src="http://vignette1.wikia.nocookie.net/khanacademy/images/2/29/Leaf-green.png/revision/latest?cb=20130420230917">
+			</a>
+			<div class="navi">
+				<%if user_signed_in? %>
+				  <%=link_to "Home", root_path %>
+					<%=link_to "About" %>
+					<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+				   <% else %>
+				   	<%=link_to "Home",root_path %>
+				    <%=link_to 'About'%>
+					 <%=link_to "Log In", new_user_session_path %>
+					<% end %>
+				</div>
+    </div>
+</div>
+  <div id="banner">
+	<div class="banner_content">
+		<h1>Computer Science</h1>
+		<p>Your online hub. Never forget an idea again.</p>
+		<%=link_to "VIEW",home_about_path,class:'button'%>
+		</div>
+  </div>
+<div id="testimonial">
+	<div class="wrapper">
+		<p>The revolutionary field of science and technology</p>
+		<p>Mackenzie Child</p>
+	</div>
+</div>
+
+<div id="callouts">
+	<div class="callout_inner">
+		<div class="wrapper">
+			<div class="callout">
+				<h2>Notes</h2>
+				<p>Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.</p>
+            </div>
+            
+			<div class="callout">
+				<h2>Notes</h2>
+				<p>Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.</p>
+            </div>
+            
+            <div class="callout">
+				<h2>Notes</h2>
+				<p>Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="bottom_cta">
+	<div class="wrapper">
+	    <h2> For Realz!</h2>
+		<p> I want you to sign up... If you don’t. I will find you!</p>
+		<%=link_to "Click Meee!!!", new_user_registration_path,class:'button'%>
+    </div>
+</div>
+
+<div class="footer">
+	<p>Mackenzie Child</p>
+</div>

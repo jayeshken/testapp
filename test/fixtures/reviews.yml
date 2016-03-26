@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject: MyString
+  IT1: 1.5
+  IT2: 1.5
+
+two:
+  subject: MyString
+  IT1: 1.5
+  IT2: 1.5

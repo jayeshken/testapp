@@ -1,0 +1,45 @@
+<div class="container">
+<h1>Listing subject_marks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Faculty</th>
+      <th>Subject</th>
+      <th>It1</th>
+      <th>It2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.faculty %></td>
+        <td><%= review.subject %></td>
+        <td><%= review.IT1 %></td>
+        <td><%= review.IT2 %></td>
+        <td><%= link_to 'Show', review %></td>
+        <td><%= link_to 'Edit', edit_review_path(review) %></td>
+        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Review', new_review_path %>
+</div>
+
+
+<script>
+   d3.select("body").append("h1").text("hello");
+</script>
+    <div class="head">
+      <div class="container">
+        <h1>INFO MANAGEMENT SYSTEM</h1>
+        <p>COMPUTER SCIENCE & ENGG</p>
+          <button type="button" class="btn btn-default"><%=link_to 'SEM IV', books_path%></button>
+      </div>
+    </div>

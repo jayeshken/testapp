@@ -1,0 +1,15 @@
+<h1>Search</h1>
+<%=form_for Search.new,html:{class: "pure-form"} do |s| %>
+
+<div class="field">
+    <%=s.label :name%><br>
+    <%=s.text_field:name%>
+</div>
+
+<div class="actions">
+    <%=s.submit "Search",class: "pure-button pure-button-primary"%>
+</div>
+
+<% end %>
+
+<p><%= link_to 'Back',books_path %></p>

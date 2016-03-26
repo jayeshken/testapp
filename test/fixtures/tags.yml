@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  DMS: MyString
+  IT1: 1
+  IT2: 1
+  DS: MyString
+  IT1: 1
+  IT2: 1
+  CO: MyString
+  IT1: 1
+  IT2: 1
+  EM: MyString
+  IT1: 1
+  IT2: 1
+  SAD: MyString
+  IT1: 1
+  IT2: 1
+  OOPD: MyString
+  IT1: 1
+  IT2: 1
+
+two:
+  name: MyString
+  DMS: MyString
+  IT1: 1
+  IT2: 1
+  DS: MyString
+  IT1: 1
+  IT2: 1
+  CO: MyString
+  IT1: 1
+  IT2: 1
+  EM: MyString
+  IT1: 1
+  IT2: 1
+  SAD: MyString
+  IT1: 1
+  IT2: 1
+  OOPD: MyString
+  IT1: 1
+  IT2: 1
